@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Anta&family=Asset&family=Chango&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=DynaPuff:wght@400..700&family=Eagle+Lake&family=Henny+Penny&family=Lacquer&family=McLaren&family=Micro+5&family=Raleway+Dots&family=Rubik+Bubbles&family=Schoolbell&family=Seymour+One&family=Slackey&family=Special+Elite&family=Yuji+Mai&family=Zhi+Mang+Xing&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.key {
+  position: absolute;
+  text-transform: uppercase;
+  opacity: 1;
+  transform-origin: center;
+  animation: growAndFade 1.5s forwards ease-out;
+}
+
+@keyframes growAndFade {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
