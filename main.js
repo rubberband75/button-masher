@@ -1,29 +1,35 @@
 const fonts = [
-//   "Agbalumo",
-//   "Anta",
-//   "Asset",
-//   "Chango",
-//   "Comic Neue",
-//   "Cormorant",
-//   "DynaPuff",
-//   "Eagle Lake",
-//   "Henny Penny",
-//   "Lacquer",
-//   "McLaren",
-//   "Micro 5",
-//   "Raleway Dots",
-//   "Rubik Bubbles",
-//   "Schoolbell",
-//   "Seymour One",
-//   "Slackey",
-//   "Special Elite",
-//   "Yuji Mai",
-//   "Zhi Mang Xing",
-//   "sans-serif",
+  //   "Agbalumo",
+  //   "Anta",
+  //   "Asset",
+  //   "Chango",
+  //   "Comic Neue",
+  //   "Cormorant",
+  //   "DynaPuff",
+  //   "Eagle Lake",
+  //   "Henny Penny",
+  //   "Lacquer",
+  //   "McLaren",
+  //   "Micro 5",
+  //   "Raleway Dots",
+  //   "Rubik Bubbles",
+  //   "Schoolbell",
+  //   "Seymour One",
+  //   "Slackey",
+  //   "Special Elite",
+  //   "Yuji Mai",
+  //   "Zhi Mang Xing",
+  //   "sans-serif",
   "serif",
 ];
 
+let showIntro = true;
+
 document.addEventListener("keydown", (event) => {
+  if (showIntro) {
+    const main = document.getElementById("body");
+  }
+
   if (event.key !== "F11") event.preventDefault();
   displayText(event.key);
 });
